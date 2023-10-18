@@ -40,7 +40,7 @@ public class StartBaseScript : MonoBehaviour
             playerNameTop.color = new Color(255, 0, 0, 170);
             playerNameBottom.text = photonView.owner.name;
             playerNameBottom.color = new Color(255, 0, 0, 170);
-            gameObject.transform.FindChild("Pointers").gameObject.SetActive(false);
+            gameObject.transform.Find("Pointers").gameObject.SetActive(false);
             levelManager.GetComponent<LevelManager>().enemyTroops.Add(gameObject);
 
         }
