@@ -283,7 +283,11 @@ public class GroundTroop : Photon.PunBehaviour
         Debug.Log("FIRED at Target" + "!   " + "is it my bullet: " + isCalledByMe.ToString());
 
     }
-
+        void CallShootAtTargetRemotely()
+    {
+        PhotonView photonView = GetComponent<PhotonView>(); 
+        photonView.RPC("shootAtTarget", PhotonTargets.Others, sortedEnemyTroopsByDistance[0].transform.position, false);
+    }
     [PunRPC]
     private void takeDamage(int d/*, Vector3 pos, Quaternion rot*/)
     {
@@ -303,11 +307,6 @@ public class GroundTroop : Photon.PunBehaviour
             PhotonNetwork.Destroy(photonView);
             //GameObject.Destroy(gameObject);
         }
-       }
-    void CallShootAtTargetRemotely()
-    {
-        PhotonView photonView = GetComponent<PhotonView>(); 
-        photonView.RPC("shootAtTarget", PhotonTargets.Others, sortedEnemyTroopsByDistance[0].transform.position, false);
     }
 }
 public class DistanceComparer : IComparer<GameObject>

@@ -48,4 +48,6 @@ MonoBehaviour:
   - UpdatePlayers
   - shootAtTarget
   - takeDamage
+  - CallShootAtTargetRemotely
+  - shootAtTargetv2
   DisableAutoOpenWizard: 1

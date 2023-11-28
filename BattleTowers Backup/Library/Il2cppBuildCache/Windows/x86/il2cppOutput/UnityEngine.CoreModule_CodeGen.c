@@ -2809,34 +2809,34 @@ extern void Transform_RotateAround_m1F93A7A1807BE407BD23EC1BA49F03AD22FCE4BE (vo
 extern void Transform_LookAt_m49185D782014D16DA747C1296BEBAC3FB3CEDC1F (void);
 // 0x000005A1 System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3,UnityEngine.Vector3)
 extern void Transform_LookAt_m6BB4B39BB829A451C2F63215361D27650AA24D8C (void);
-// 0x000005A2 System.Void UnityEngine.Transform::Internal_LookAt(UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000005A2 System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3)
+extern void Transform_LookAt_m996FADE2327B0A4412FF4A5179B8BABD9EB849BA (void);
+// 0x000005A3 System.Void UnityEngine.Transform::Internal_LookAt(UnityEngine.Vector3,UnityEngine.Vector3)
 extern void Transform_Internal_LookAt_m1A24125A99A766EDA6059424EA3B5FA9C5E8B61B (void);
-// 0x000005A3 UnityEngine.Vector3 UnityEngine.Transform::TransformDirection(UnityEngine.Vector3)
+// 0x000005A4 UnityEngine.Vector3 UnityEngine.Transform::TransformDirection(UnityEngine.Vector3)
 extern void Transform_TransformDirection_m6B5E3F0A7C6323159DEC6D9BC035FB53ADD96E91 (void);
-// 0x000005A4 UnityEngine.Vector3 UnityEngine.Transform::TransformPoint(UnityEngine.Vector3)
+// 0x000005A5 UnityEngine.Vector3 UnityEngine.Transform::TransformPoint(UnityEngine.Vector3)
 extern void Transform_TransformPoint_m68AF95765A9279192E601208A9C5170027A5F0D2 (void);
-// 0x000005A5 UnityEngine.Vector3 UnityEngine.Transform::InverseTransformPoint(UnityEngine.Vector3)
+// 0x000005A6 UnityEngine.Vector3 UnityEngine.Transform::InverseTransformPoint(UnityEngine.Vector3)
 extern void Transform_InverseTransformPoint_m476ABC8F3F14824D7D82FE2C54CEE5A151A669B8 (void);
-// 0x000005A6 UnityEngine.Transform UnityEngine.Transform::get_root()
+// 0x000005A7 UnityEngine.Transform UnityEngine.Transform::get_root()
 extern void Transform_get_root_mDEB1F3B4DB26B32CEED6DFFF734F85C79C4DDA91 (void);
-// 0x000005A7 UnityEngine.Transform UnityEngine.Transform::GetRoot()
+// 0x000005A8 UnityEngine.Transform UnityEngine.Transform::GetRoot()
 extern void Transform_GetRoot_mAB553501306732D17B508521058BD5D22A759CF0 (void);
-// 0x000005A8 System.Int32 UnityEngine.Transform::get_childCount()
+// 0x000005A9 System.Int32 UnityEngine.Transform::get_childCount()
 extern void Transform_get_childCount_mCBED4F6D3F6A7386C4D97C2C3FD25C383A0BCD05 (void);
-// 0x000005A9 System.Void UnityEngine.Transform::SetAsFirstSibling()
+// 0x000005AA System.Void UnityEngine.Transform::SetAsFirstSibling()
 extern void Transform_SetAsFirstSibling_mD5C02831BA6C7C3408CD491191EAF760ECB7E754 (void);
-// 0x000005AA UnityEngine.Transform UnityEngine.Transform::FindRelativeTransformWithPath(UnityEngine.Transform,System.String,System.Boolean)
+// 0x000005AB UnityEngine.Transform UnityEngine.Transform::FindRelativeTransformWithPath(UnityEngine.Transform,System.String,System.Boolean)
 extern void Transform_FindRelativeTransformWithPath_m8B6DE13079DE11DCCDD2CA40CEC59319FD70A12D (void);
-// 0x000005AB UnityEngine.Transform UnityEngine.Transform::Find(System.String)
+// 0x000005AC UnityEngine.Transform UnityEngine.Transform::Find(System.String)
 extern void Transform_Find_mB1687901A4FB0D562C44A93CC67CD35DCFCAABA1 (void);
-// 0x000005AC UnityEngine.Vector3 UnityEngine.Transform::get_lossyScale()
+// 0x000005AD UnityEngine.Vector3 UnityEngine.Transform::get_lossyScale()
 extern void Transform_get_lossyScale_m469A16F93F135C1E4D5955C7EBDB893D1892A331 (void);
-// 0x000005AD System.Boolean UnityEngine.Transform::IsChildOf(UnityEngine.Transform)
+// 0x000005AE System.Boolean UnityEngine.Transform::IsChildOf(UnityEngine.Transform)
 extern void Transform_IsChildOf_m1783A88A490931E98F4D5E361595A518E09FD4BC (void);
-// 0x000005AE System.Void UnityEngine.Transform::set_hasChanged(System.Boolean)
+// 0x000005AF System.Void UnityEngine.Transform::set_hasChanged(System.Boolean)
 extern void Transform_set_hasChanged_mD1CDCAE366DB514FBECD9DAAED0F7834029E1304 (void);
-// 0x000005AF UnityEngine.Transform UnityEngine.Transform::FindChild(System.String)
-extern void Transform_FindChild_m0305D8CCABE0EE6D1D0D1028F64E2205963FE652 (void);
 // 0x000005B0 System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()
 extern void Transform_GetEnumerator_mBA0E884A69F0AA05FCB69F4EE5F700177F75DD7E (void);
 // 0x000005B1 UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
@@ -5814,6 +5814,7 @@ static Il2CppMethodPointer s_methodPointers[2258] =
 	Transform_RotateAround_m1F93A7A1807BE407BD23EC1BA49F03AD22FCE4BE,
 	Transform_LookAt_m49185D782014D16DA747C1296BEBAC3FB3CEDC1F,
 	Transform_LookAt_m6BB4B39BB829A451C2F63215361D27650AA24D8C,
+	Transform_LookAt_m996FADE2327B0A4412FF4A5179B8BABD9EB849BA,
 	Transform_Internal_LookAt_m1A24125A99A766EDA6059424EA3B5FA9C5E8B61B,
 	Transform_TransformDirection_m6B5E3F0A7C6323159DEC6D9BC035FB53ADD96E91,
 	Transform_TransformPoint_m68AF95765A9279192E601208A9C5170027A5F0D2,
@@ -5827,7 +5828,6 @@ static Il2CppMethodPointer s_methodPointers[2258] =
 	Transform_get_lossyScale_m469A16F93F135C1E4D5955C7EBDB893D1892A331,
 	Transform_IsChildOf_m1783A88A490931E98F4D5E361595A518E09FD4BC,
 	Transform_set_hasChanged_mD1CDCAE366DB514FBECD9DAAED0F7834029E1304,
-	Transform_FindChild_m0305D8CCABE0EE6D1D0D1028F64E2205963FE652,
 	Transform_GetEnumerator_mBA0E884A69F0AA05FCB69F4EE5F700177F75DD7E,
 	Transform_GetChild_mA7D94BEFF0144F76561D9B8FED61C5C939EC1F1C,
 	Transform_get_position_Injected_m43CE3FC8FB3C52896D709B07EB77340407800C13,
@@ -8075,6 +8075,7 @@ static const int32_t s_InvokerIndices[2258] =
 	950,
 	2233,
 	1397,
+	2285,
 	1397,
 	2103,
 	2103,
@@ -8088,7 +8089,6 @@ static const int32_t s_InvokerIndices[2258] =
 	2658,
 	1966,
 	2259,
-	1778,
 	2608,
 	1774,
 	2178,
@@ -8960,8 +8960,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[62] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[147] = 
 {
-	{ (Il2CppRGCTXDataType)3, 21398 },
-	{ (Il2CppRGCTXDataType)3, 21413 },
+	{ (Il2CppRGCTXDataType)3, 21400 },
+	{ (Il2CppRGCTXDataType)3, 21415 },
 	{ (Il2CppRGCTXDataType)2, 1275 },
 	{ (Il2CppRGCTXDataType)3, 6200 },
 	{ (Il2CppRGCTXDataType)3, 13442 },
@@ -8976,14 +8976,14 @@ static const Il2CppRGCTXDefinition s_rgctxValues[147] =
 	{ (Il2CppRGCTXDataType)2, 215 },
 	{ (Il2CppRGCTXDataType)2, 3719 },
 	{ (Il2CppRGCTXDataType)2, 3719 },
-	{ (Il2CppRGCTXDataType)3, 21094 },
-	{ (Il2CppRGCTXDataType)3, 21136 },
-	{ (Il2CppRGCTXDataType)3, 21135 },
-	{ (Il2CppRGCTXDataType)3, 21102 },
+	{ (Il2CppRGCTXDataType)3, 21096 },
+	{ (Il2CppRGCTXDataType)3, 21138 },
+	{ (Il2CppRGCTXDataType)3, 21137 },
+	{ (Il2CppRGCTXDataType)3, 21104 },
 	{ (Il2CppRGCTXDataType)3, 10894 },
-	{ (Il2CppRGCTXDataType)3, 21129 },
-	{ (Il2CppRGCTXDataType)3, 21116 },
-	{ (Il2CppRGCTXDataType)3, 21099 },
+	{ (Il2CppRGCTXDataType)3, 21131 },
+	{ (Il2CppRGCTXDataType)3, 21118 },
+	{ (Il2CppRGCTXDataType)3, 21101 },
 	{ (Il2CppRGCTXDataType)1, 182 },
 	{ (Il2CppRGCTXDataType)2, 182 },
 	{ (Il2CppRGCTXDataType)1, 181 },
@@ -8991,24 +8991,24 @@ static const Il2CppRGCTXDefinition s_rgctxValues[147] =
 	{ (Il2CppRGCTXDataType)1, 61 },
 	{ (Il2CppRGCTXDataType)2, 61 },
 	{ (Il2CppRGCTXDataType)1, 68 },
-	{ (Il2CppRGCTXDataType)3, 21039 },
+	{ (Il2CppRGCTXDataType)3, 21041 },
 	{ (Il2CppRGCTXDataType)1, 70 },
 	{ (Il2CppRGCTXDataType)2, 70 },
 	{ (Il2CppRGCTXDataType)1, 69 },
 	{ (Il2CppRGCTXDataType)2, 69 },
-	{ (Il2CppRGCTXDataType)3, 21025 },
-	{ (Il2CppRGCTXDataType)3, 21031 },
+	{ (Il2CppRGCTXDataType)3, 21027 },
+	{ (Il2CppRGCTXDataType)3, 21033 },
 	{ (Il2CppRGCTXDataType)3, 20759 },
 	{ (Il2CppRGCTXDataType)3, 20763 },
 	{ (Il2CppRGCTXDataType)1, 71 },
 	{ (Il2CppRGCTXDataType)2, 71 },
-	{ (Il2CppRGCTXDataType)3, 21033 },
 	{ (Il2CppRGCTXDataType)3, 21035 },
+	{ (Il2CppRGCTXDataType)3, 21037 },
 	{ (Il2CppRGCTXDataType)3, 20767 },
 	{ (Il2CppRGCTXDataType)1, 64 },
-	{ (Il2CppRGCTXDataType)3, 21019 },
+	{ (Il2CppRGCTXDataType)3, 21021 },
 	{ (Il2CppRGCTXDataType)1, 127 },
-	{ (Il2CppRGCTXDataType)3, 21017 },
+	{ (Il2CppRGCTXDataType)3, 21019 },
 	{ (Il2CppRGCTXDataType)1, 129 },
 	{ (Il2CppRGCTXDataType)2, 129 },
 	{ (Il2CppRGCTXDataType)1, 130 },
@@ -9017,7 +9017,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[147] =
 	{ (Il2CppRGCTXDataType)1, 132 },
 	{ (Il2CppRGCTXDataType)2, 3713 },
 	{ (Il2CppRGCTXDataType)1, 124 },
-	{ (Il2CppRGCTXDataType)3, 21026 },
+	{ (Il2CppRGCTXDataType)3, 21028 },
 	{ (Il2CppRGCTXDataType)1, 125 },
 	{ (Il2CppRGCTXDataType)1, 133 },
 	{ (Il2CppRGCTXDataType)2, 3714 },
@@ -9030,20 +9030,20 @@ static const Il2CppRGCTXDefinition s_rgctxValues[147] =
 	{ (Il2CppRGCTXDataType)3, 10896 },
 	{ (Il2CppRGCTXDataType)3, 10897 },
 	{ (Il2CppRGCTXDataType)3, 10898 },
-	{ (Il2CppRGCTXDataType)3, 21132 },
+	{ (Il2CppRGCTXDataType)3, 21134 },
 	{ (Il2CppRGCTXDataType)3, 10895 },
 	{ (Il2CppRGCTXDataType)1, 184 },
 	{ (Il2CppRGCTXDataType)2, 184 },
 	{ (Il2CppRGCTXDataType)2, 166 },
 	{ (Il2CppRGCTXDataType)2, 169 },
-	{ (Il2CppRGCTXDataType)3, 21159 },
+	{ (Il2CppRGCTXDataType)3, 21161 },
 	{ (Il2CppRGCTXDataType)2, 168 },
 	{ (Il2CppRGCTXDataType)1, 165 },
 	{ (Il2CppRGCTXDataType)2, 165 },
 	{ (Il2CppRGCTXDataType)2, 62 },
 	{ (Il2CppRGCTXDataType)1, 62 },
 	{ (Il2CppRGCTXDataType)2, 3089 },
-	{ (Il2CppRGCTXDataType)3, 21054 },
+	{ (Il2CppRGCTXDataType)3, 21056 },
 	{ (Il2CppRGCTXDataType)1, 3089 },
 	{ (Il2CppRGCTXDataType)3, 9842 },
 	{ (Il2CppRGCTXDataType)3, 20665 },
@@ -9111,8 +9111,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[147] =
 extern const CustomAttributesCacheGenerator g_UnityEngine_CoreModule_AttributeGenerators[];
 static TypeDefinitionIndex s_staticConstructorsToRunAtStartup[10] = 
 {
-	2614,
-	2755,
+	2615,
 	2756,
 	2757,
 	2758,
@@ -9120,6 +9119,7 @@ static TypeDefinitionIndex s_staticConstructorsToRunAtStartup[10] =
 	2760,
 	2761,
 	2762,
+	2763,
 	0,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_CoreModule_CodeGenModule;

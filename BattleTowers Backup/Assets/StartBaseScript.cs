@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class StartBaseScript : MonoBehaviour
+public class StartBaseScript : Photon.PunBehaviour
 {
     [SerializeField] private Text playerNameTop;
     [SerializeField] private Text playerNameBottom;
-    [SerializeField] private PhotonView photonView;
+    //[SerializeField] public PhotonView photonView;
     [SerializeField] private Material redMat;
     [SerializeField] private Material greyMat;
 
@@ -16,13 +16,13 @@ public class StartBaseScript : MonoBehaviour
     public GameObject mPtr;
     public GameObject sPtr;
     public GameObject levelManager;
-    
-
+    public int health;
+    public GameObject explosionEffect;
 
     private void Start()
     {
         levelManager = GameObject.Find("GameManager");
-
+        //photonView = this.GetComponent<PhotonView>();
         
        // nPtr = gameObject.transform.FindChild("PointerNorth").gameObject;
        // mPtr = gameObject.transform.FindChild("PointerMid").gameObject;
@@ -71,5 +71,25 @@ public class StartBaseScript : MonoBehaviour
        playerNameTop.transform.LookAt(Camera.main.transform);
         playerNameBottom.transform.LookAt(Camera.main.transform);//why does this cause so many errors:(
                                                               //  playerName.transform.rotation = new Quaternion(playerName.transform.rotation.x, playerName.transform.rotation.y+180, playerName.transform.rotation.z, 0);
+    }
+    [PunRPC]
+    private void takeDamage(int d)
+    {
+        Debug.Log(d + "damage Taken");
+        health -= d;
+        /*
+        GameObject particleEffect = Instantiate(hitEffectPrefab, pos, rot);
+        particleEffect.transform.Translate(0, 0, .3f);
+        particleEffect.transform.Rotate(Vector3.up, 180f);
+        */
+        if (health <= 0)
+        {
+            //TODO: play fancy effect
+            Instantiate(explosionEffect, gameObject.transform.position, Quaternion.identity);
+            levelManager.GetComponent<LevelManager>().enemyTroops.Remove(gameObject);
+            //destroy via photon\
+            PhotonNetwork.Destroy(photonView);
+            //GameObject.Destroy(gameObject);
+        }
     }
 }

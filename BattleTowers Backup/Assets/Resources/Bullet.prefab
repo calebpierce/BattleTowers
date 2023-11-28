@@ -64,7 +64,7 @@ MonoBehaviour:
   isMine: 0
   target: {x: 0, y: 0, z: 0}
   damage: 5
-  speed: 15
+  speed: 30
   hitEffect: {fileID: 8600657658893950750, guid: ab51b26bf988eaa4cb07b4fcc374254b, type: 3}
 --- !u!114 &5895723653170015818
 MonoBehaviour:
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8376466853513323297}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.374}
+  m_LocalPosition: {x: 0, y: 0, z: -0.33}
   m_LocalScale: {x: 0.99, y: 0.02, z: 0.99}
   m_Children: []
   m_Father: {fileID: 2937273074769417514}

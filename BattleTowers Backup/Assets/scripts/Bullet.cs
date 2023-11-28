@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour
             
 
             //TODO: move the hitEffect from the bullet script to the takeDamage method on grountTroop, youll have to pass the transform and rotation to spawn it at.
-            if (levelManager.GetComponent<LevelManager>().enemyTroops.Contains(hitColliders[i].gameObject))
+            if (levelManager.GetComponent<LevelManager>().enemyTroops.Contains(hitColliders[i].gameObject) && hitColliders[i].gameObject.tag != "base")
             {
 
                 if (isMine)
@@ -52,6 +52,26 @@ public class Bullet : MonoBehaviour
                     particleEffect.transform.Translate(0, 0, .3f);
                     particleEffect.transform.Rotate(Vector3.up, 180f);
                     hitColliders[i].gameObject.GetComponent<GroundTroop>().photonView.RPC("takeDamage", PhotonTargets.All, damage/*, transform.position, transform.rotation*/);
+                }
+                Destroy(gameObject);
+                break;
+            }
+            if (hitColliders[i].gameObject.tag == "base")
+            {
+
+                if (isMine)
+                {
+                    Debug.Log("Collided with base:" + hitColliders[i].gameObject.name + "Calling RPC");
+                    //perform an RPC call to damage the enemyaaaa
+                    GameObject particleEffect = Instantiate(hitEffect, transform.position, transform.rotation);
+                    particleEffect.transform.Translate(0, 0, .3f);
+                    particleEffect.transform.Rotate(Vector3.up, 180f);
+                    hitColliders[i].gameObject.GetComponent<StartBaseScript>().photonView.RPC("takeDamage", PhotonTargets.All, damage/*, transform.position, transform.rotation*/);
+                }
+                else {
+                    GameObject particleEffect = Instantiate(hitEffect, transform.position, transform.rotation);
+                    particleEffect.transform.Translate(0, 0, .3f);
+                    particleEffect.transform.Rotate(Vector3.up, 180f);
                 }
                 Destroy(gameObject);
                 break;
