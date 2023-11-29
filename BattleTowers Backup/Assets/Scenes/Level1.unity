@@ -14,20 +14,20 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.3980954, g: 0.42382863, b: 0.4245283, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.0022
   m_LinearFogStart: 0
-  m_LinearFogEnd: 300
+  m_LinearFogEnd: 822.47
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.11
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0.459
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -302,7 +302,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bomb Launcher
+  m_Text: 'Missile Launcher
 
 '
 --- !u!222 &97598337
@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 310438563}
   m_Layer: 0
   m_Name: SouthPath2
-  m_TagString: Untagged
+  m_TagString: DontPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 320003370}
   m_Layer: 0
   m_Name: NorthPath1
-  m_TagString: Untagged
+  m_TagString: DontPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1426,6 +1426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!4 &386162788 stripped
@@ -1741,6 +1745,7 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 0}
+  ObservedComponentsFoldoutOpen: 1
   viewIdField: 9
   instantiationId: 9
   currentMasterID: -1
@@ -1829,6 +1834,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
       propertyPath: m_Name
       value: rock2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
@@ -1991,7 +2000,7 @@ GameObject:
   - component: {fileID: 451886309}
   m_Layer: 0
   m_Name: MidPath
-  m_TagString: Untagged
+  m_TagString: DontPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2143,6 +2152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1 &466795009 stripped
@@ -2240,6 +2253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!4 &504546782 stripped
@@ -2318,6 +2335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1001 &510126272
@@ -2390,6 +2411,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
       propertyPath: m_Name
       value: rock2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
@@ -2581,6 +2606,92 @@ Transform:
   m_Father: {fileID: 1515984638}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &559640074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559640075}
+  - component: {fileID: 559640077}
+  - component: {fileID: 559640076}
+  m_Layer: 5
+  m_Name: GoldText (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &559640075
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559640074}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3655709439812600738}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -278, y: 140}
+  m_SizeDelta: {x: 200, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &559640076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559640074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'COST: 3 gold
+
+
+    -This unit travels towards the enemy base
+
+
+    -Will
+    stop and shoot at enemies'
+--- !u!222 &559640077
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559640074}
+  m_CullTransparentMesh: 1
 --- !u!1 &573079918
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,7 +2736,7 @@ GameObject:
   - component: {fileID: 594374095}
   m_Layer: 0
   m_Name: SouthPath3
-  m_TagString: Untagged
+  m_TagString: DontPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2825,6 +2936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1 &649230135
@@ -2916,7 +3031,7 @@ GameObject:
   - component: {fileID: 678901167}
   m_Layer: 0
   m_Name: SouthPath1
-  m_TagString: Untagged
+  m_TagString: DontPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3136,6 +3251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1 &802459193 stripped
@@ -3156,15 +3275,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8933975843239150019, guid: 97c7c384c6a7fa444983a4bc1ef754f8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.25
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8933975843239150019, guid: 97c7c384c6a7fa444983a4bc1ef754f8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.25
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8933975843239150019, guid: 97c7c384c6a7fa444983a4bc1ef754f8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.25
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8933975843239150019, guid: 97c7c384c6a7fa444983a4bc1ef754f8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3209,6 +3328,10 @@ PrefabInstance:
     - target: {fileID: 8933975843239150031, guid: 97c7c384c6a7fa444983a4bc1ef754f8, type: 3}
       propertyPath: m_Name
       value: Ocean
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933975843239150031, guid: 97c7c384c6a7fa444983a4bc1ef754f8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97c7c384c6a7fa444983a4bc1ef754f8, type: 3}
@@ -3276,6 +3399,7 @@ MonoBehaviour:
   uiManager: {fileID: 1585365894}
   buildingCost: 5
   isSelectUp: 0
+  levelManager: {fileID: 619995114}
 --- !u!4 &896778895
 Transform:
   m_ObjectHideFlags: 0
@@ -3575,6 +3699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1001 &1055036363
@@ -3647,6 +3775,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
       propertyPath: m_Name
       value: rock2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
@@ -4008,6 +4140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1 &1116919758
@@ -4301,6 +4437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1 &1255270776
@@ -4317,7 +4457,7 @@ GameObject:
   - component: {fileID: 1255270778}
   m_Layer: 0
   m_Name: NorthPath3
-  m_TagString: Untagged
+  m_TagString: DontPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4474,6 +4614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1001 &1320480426
@@ -4547,6 +4691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1001 &1340663201
@@ -4619,6 +4767,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
       propertyPath: m_Name
       value: rock2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
@@ -4770,6 +4922,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
       propertyPath: m_Name
       value: rock2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
@@ -5423,6 +5579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!1 &1560657738
@@ -5531,12 +5691,10 @@ MonoBehaviour:
     -This building produces gold every second.
 
 
-    LEVEL
-    1: +1 gold/sec
+    +2
+    gold/sec
 
-    LEVEL 2: +2 gold/sec
-
-    LEVEL 3: +3 gold/sec'
+'
 --- !u!222 &1567994422
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5618,19 +5776,11 @@ MonoBehaviour:
   m_Text: 'COST: 20 gold
 
 
-    -This tower shoots at the largest group of enemies.
+    -This tower shoots a homing missile at the nearest
+    enemy.
 
 
-    -AOE
-    damage.
-
-
-    LEVEL 1: 10 splash damage
-
-    LEVEL 2: 15 splash damage
-
-    LEVEL
-    3: 25 splash damage'
+    -deals significant damage'
 --- !u!222 &1572329822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5744,7 +5894,7 @@ GameObject:
   - component: {fileID: 1592817594}
   m_Layer: 0
   m_Name: NorthPath2
-  m_TagString: Untagged
+  m_TagString: DontPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5895,6 +6045,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
       propertyPath: m_Name
       value: rock2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
@@ -6193,6 +6347,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
       propertyPath: m_Name
       value: rock2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
@@ -6935,6 +7093,7 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 0}
+  ObservedComponentsFoldoutOpen: 1
   viewIdField: 10
   instantiationId: 10
   currentMasterID: -1
@@ -7097,16 +7256,8 @@ MonoBehaviour:
     -This tower shoots at the nearest enemy.
 
 
-    -Slow
-    firerate but high damage.
-
-
-    LEVEL 1: 15 damage
-
-    LEVEL 2: 25 damage
-
-    LEVEL
-    3: 35 damage'
+    -fast
+    firerate but low damage.'
 --- !u!222 &2016748486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7143,20 +7294,20 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.23
+  m_Color: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
+  m_Intensity: 1.05
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 2
     m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.102
-    m_NormalBias: 0.09
-    m_NearPlane: 0.54
+    m_Strength: 0.625
+    m_Bias: 0
+    m_NormalBias: 0
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -7183,11 +7334,11 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 2.14
-  m_ColorTemperature: 6859
+  m_BounceIntensity: 3.37
+  m_ColorTemperature: 6058
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -7316,6 +7467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8a8b47412cce6429a2897227c872dd, type: 3}
 --- !u!4 &2059790251 stripped
@@ -7409,7 +7564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Troop Type 1
+  m_Text: Tank
 --- !u!224 &1252369849901756008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8894,6 +9049,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 492202124235363886}
+  - {fileID: 559640075}
   m_Father: {fileID: 1863783429429656858}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8922,6 +9078,10 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618088, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
+      propertyPath: _minCamZoom
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048323401856618088, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: _camSpeedFast
       value: 0.2
       objectReference: {fileID: 0}
@@ -8939,7 +9099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.76
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8947,11 +9107,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.84
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9396927
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8959,7 +9119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3420201
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalRotation.z
@@ -8971,7 +9131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -40
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8048323401856618091, guid: c590de9a082e0ec498d70b7256620ef7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

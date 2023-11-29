@@ -33872,8 +33872,8 @@ GameObject:
   - component: {fileID: 198000011976894484}
   - component: {fileID: 199000010420214726}
   - component: {fileID: 135926341382990654}
-  - component: {fileID: 114238652440474040}
   - component: {fileID: 2362790448247807166}
+  - component: {fileID: 3459513465132635527}
   m_Layer: 0
   m_Name: large explode
   m_TagString: Untagged
@@ -38704,19 +38704,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.1
   m_Center: {x: 0, y: 0.78, z: 0}
---- !u!114 &114238652440474040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000012903210382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a895231490da6545890b1e1794f8704, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathtimer: 5
 --- !u!82 &2362790448247807166
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38813,6 +38800,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3459513465132635527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012903210382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6d69b89c5b52b45ab621e127c18de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathtimer: 3
 --- !u!1 &1000014073915832
 GameObject:
   m_ObjectHideFlags: 0

@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: -546084676429787179}
   m_Layer: 0
   m_Name: Gun1
-  m_TagString: Untagged
+  m_TagString: turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnemy: 0
   rotationSpeed: 5
-  fireRate: 0.25
+  fireRate: 0.5
   fireRange: 50
   health: 0
   bulletPrefab: {fileID: 5607543752005545865, guid: 2d7a43bf838e51841bc52b69dd0a14a6, type: 3}

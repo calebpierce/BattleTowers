@@ -50,4 +50,6 @@ MonoBehaviour:
   - takeDamage
   - CallShootAtTargetRemotely
   - shootAtTargetv2
+  - updTarg
+  - AskForNewTarg
   DisableAutoOpenWizard: 1

@@ -86,7 +86,7 @@ public class BombTurret : Photon.PunBehaviour
             Quaternion rotation = Quaternion.Euler(turretTop.transform.eulerAngles.x - 90f, turretTop.transform.eulerAngles.y, turretTop.transform.eulerAngles.z);
             turretTop.transform.rotation = rotation;
 
-            if (Vector3.Distance(transform.position, sortedEnemyTroopsByDistance[0].transform.position) <= fireRange && sortedEnemyTroopsByDistance != null && fireTimer <= 0)
+            if (Vector3.Distance(transform.position, sortedEnemyTroopsByDistance[0].transform.position) <= fireRange && sortedEnemyTroopsByDistance != null && fireTimer <= 0 && this.GetComponent<BuildStats>().isActivated)
             {
 
                 shootAtTargetv2(sortedEnemyTroopsByDistance[0].GetComponent<PhotonView>().viewID, true);
@@ -120,6 +120,8 @@ public class BombTurret : Photon.PunBehaviour
             bombComponent.targID = targID;
             bombComponent.isMine = isCalledByMe;
             bombComponent.damage = 10;
+            bombComponent.turretPhotonView = this.GetComponent<PhotonView>();
+            
             // TODO: Set the damage for the bullet
         }
 
@@ -131,4 +133,5 @@ public class BombTurret : Photon.PunBehaviour
         Debug.Log("SHOOTING REMOTLEY");
         photonView.RPC("shootAtTargetv2", PhotonTargets.Others, sortedEnemyTroopsByDistance[0].GetComponent<PhotonView>().viewID, false);
     }
+
 }

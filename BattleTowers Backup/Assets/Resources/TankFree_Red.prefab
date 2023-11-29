@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fec6f524c0c644ca96445c905ab540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 1
+  cost: 3
   isActivated: 0
   isEnemy: 0
 --- !u!114 &8650929711861130121
@@ -525,13 +525,13 @@ MonoBehaviour:
   explosionEffect: {fileID: 1000012903210382, guid: a6a622dcb6224014f923dc6743bf35d3, type: 3}
   speed: 5
   isEnemy: 0
-  moveSpeed: 5
+  moveSpeed: 6
   rotationSpeed: 4
   collisionRadius: 1.5
   fireRate: 3
-  fireRange: 60
+  fireRange: 40
   stopAndShootRange: 20
-  health: 30
+  health: 25
   bulletPrefab: {fileID: 5607543752005545865, guid: 2d7a43bf838e51841bc52b69dd0a14a6, type: 3}
   hitEffectPrefab: {fileID: 8600657658893950750, guid: ab51b26bf988eaa4cb07b4fcc374254b, type: 3}
 --- !u!114 &3069470182630195716

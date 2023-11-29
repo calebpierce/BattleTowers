@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class ECdestroyMe : MonoBehaviour{
+public class ECdestroyMe : Photon.PunBehaviour{
 
     float timer;
     public float deathtimer = 10;
@@ -19,6 +20,7 @@ public class ECdestroyMe : MonoBehaviour{
 
         if(timer >= deathtimer)
         {
+
             Destroy(gameObject);
         }
 	

@@ -31,6 +31,7 @@ public class ButtonFunctions : MonoBehaviour
     [SerializeField] private GameObject startButton;
     private void Awake()
     {
+        PhotonNetwork.LeaveRoom();
         PhotonNetwork.ConnectUsingSettings(versionName);
         Debug.Log("Connecting to Photon...");
     }

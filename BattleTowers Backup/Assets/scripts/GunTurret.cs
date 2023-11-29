@@ -75,7 +75,7 @@ public class GunTurret : Photon.PunBehaviour
             Quaternion rotation = Quaternion.Euler(-90f, turretTop.transform.eulerAngles.y +90f, 0f);
             turretTop.transform.rotation = rotation;
 
-            if (Vector3.Distance(transform.position, sortedEnemyTroopsByDistance[0].transform.position) <= fireRange && sortedEnemyTroopsByDistance != null && fireTimer <= 0)
+            if (Vector3.Distance(transform.position, sortedEnemyTroopsByDistance[0].transform.position) <= fireRange && sortedEnemyTroopsByDistance != null && fireTimer <= 0 && this.GetComponent<BuildStats>().isActivated)
             {
 
                 shootAtTargetv2(sortedEnemyTroopsByDistance[0].transform.position, true);

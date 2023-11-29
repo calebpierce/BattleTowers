@@ -194,7 +194,7 @@ MonoBehaviour:
   cost: 10
   level: 1
   uiManager: {fileID: 0}
-  timer: 1
+  timer: 0.5
 --- !u!114 &1549284562842141167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 100
   isActivated: 0
+  isEnemy: 0
 --- !u!114 &7964583474531676056
 MonoBehaviour:
   m_ObjectHideFlags: 0

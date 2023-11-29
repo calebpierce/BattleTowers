@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8082611875551021869}
   m_Layer: 0
   m_Name: BombLauncher
-  m_TagString: Untagged
+  m_TagString: turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
   isEnemy: 0
   rotationSpeed: 5
   fireRate: 2
-  fireRange: 40
+  fireRange: 50
   health: 0
   bombPrefab: {fileID: 348736523503624112, guid: 055b119a4310f9b4b85672fc48e70224, type: 3}
   hitEffectPrefab: {fileID: 0}

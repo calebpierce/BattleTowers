@@ -48,7 +48,9 @@ public class CameraController : MonoBehaviour
     {
         newPosition = transform.position;
         newRotation = transform.rotation;
-        newZoom = cameraTransform.localPosition;
+        newZoom = cameraTransform.localPosition * 5;
+        newZoom.y = Mathf.Clamp(newZoom.y, _maxCamZoom, _minCamZoom);
+        newZoom.z = -newZoom.y; // Assuming you want to maintain a certain relationship between y and z
     }
 
     // Update is called once per frame
@@ -110,22 +112,22 @@ public class CameraController : MonoBehaviour
             _camMovementSpeed = _camSpeed;
         }
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.mousePosition.y >= Screen.height - _camBorderMovement)
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) /*|| Input.mousePosition.y >= Screen.height - _camBorderMovement*/)
         {
             newPosition += (transform.forward * _camMovementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || Input.mousePosition.y <= _camBorderMovement)
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)/* || Input.mousePosition.y <= _camBorderMovement*/)
         {
             newPosition += (transform.forward * -_camMovementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.mousePosition.x >= Screen.width - _camBorderMovement)
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)/* || Input.mousePosition.x >= Screen.width - _camBorderMovement*/)
         {
             newPosition += (transform.right * _camMovementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.mousePosition.x <= _camBorderMovement)
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)/* || Input.mousePosition.x <= _camBorderMovement*/)
         {
             newPosition += (transform.right * -_camMovementSpeed);
         }

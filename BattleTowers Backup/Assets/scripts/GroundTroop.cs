@@ -279,6 +279,7 @@ public class GroundTroop : Photon.PunBehaviour
         newBullet.transform.position += newBullet.transform.rotation * Vector3.forward * 1.3f;
         newBullet.GetComponent<Bullet>().target = target;
         newBullet.GetComponent<Bullet>().isMine = isCalledByMe;
+        newBullet.GetComponent <Bullet>().damage = 3;
         //TODO: change the damage of the bullet based on this tanks level
         Debug.Log("FIRED at Target" + "!   " + "is it my bullet: " + isCalledByMe.ToString());
 

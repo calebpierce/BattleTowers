@@ -102,6 +102,7 @@ MonoBehaviour:
   damage: 2
   speed: 15
   hitEffect: {fileID: 1000012903210382, guid: 85faa2cbd1d5cfa4f822bb5c4ee3f98c, type: 3}
+  turretPhotonView: {fileID: 0}
 --- !u!82 &-1532658324026797918
 AudioSource:
   m_ObjectHideFlags: 0

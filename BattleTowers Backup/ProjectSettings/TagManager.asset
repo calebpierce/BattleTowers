@@ -11,6 +11,10 @@ TagManager:
   - northWaypoint
   - midWaypoint
   - southWaypoint
+  - base
+  - FxTemporaire
+  - DontPlace
+  - turret
   layers:
   - Default
   - TransparentFX

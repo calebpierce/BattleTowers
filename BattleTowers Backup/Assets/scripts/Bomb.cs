@@ -14,28 +14,79 @@ public class Bomb : MonoBehaviour
     private float targetUpdate;
    [SerializeField] private float speed;
     [SerializeField] private GameObject hitEffect;
-
+    public PhotonView turretPhotonView;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        targetPhotonView = PhotonView.Find(targID);
         targetUpdate = .1f;
         levelManager = GameObject.Find("GameManager");
+    }
+    void updTarg()
+    {
+        List<GameObject> sortedTroopsByDistance = new List<GameObject>();
+        if (isMine)
+        {
+
+            sortedTroopsByDistance = levelManager.GetComponent<LevelManager>().enemyTroops.GetRange(0, levelManager.GetComponent<LevelManager>().enemyTroops.Count);
+            sortedTroopsByDistance.Sort(new DistanceComparer(transform.position));
+            targID = sortedTroopsByDistance[0].GetComponent<PhotonView>().viewID;
+            targetPhotonView = PhotonView.Find(targID);
+        }
+        else
+        {
+            // Find all troop GameObjects
+            GameObject[] allTroops = GameObject.FindGameObjectsWithTag("troop");
+
+            // Filter out the ones that are in the enemyTroops list
+            foreach (GameObject troop in allTroops)
+            {
+                if (!levelManager.GetComponent<LevelManager>().enemyTroops.Contains(troop))
+                {
+                    sortedTroopsByDistance.Add(troop);
+                }
+            }
+
+            // Sort the list based on distance to this bomb
+            sortedTroopsByDistance.Sort(new DistanceComparer(transform.position));
+
+            // If there are any troops in the sorted list, set the target to the closest one
+            if (sortedTroopsByDistance.Count > 0)
+            {
+                targID = sortedTroopsByDistance[0].GetComponent<PhotonView>().viewID;
+                targetPhotonView = PhotonView.Find(targID);
+            }
+            else
+            {
+                CreateExplosionEffect();
+                Destroy(gameObject);
+                // Handle the case where there are no valid troops
+                // This could mean setting targID to 0, or some other logic as per your game's needs
+
+            }
+        }
     }
     // Update is called once per frame
     void Update()
     {
-        if (targetPhotonView == null && targID != 0) // Ensure that targID is not the default value
-        {
-            targetPhotonView = PhotonView.Find(targID);
-            if (targetPhotonView == null)
-            {
-                Debug.LogError("Target PhotonView not found for ID: " + targID);
-                //return; // If we don't find the PhotonView, we don't want to proceed further.
-            }
-        }
 
+        
+        if (PhotonView.Find(targID) == null)
+        {
+                Debug.LogError("Target PhotonView not found for ID: " + targID);
+                    Debug.LogWarning("Finding new target");
+                    updTarg();
+                return;
+        }
+        
+        if (targetPhotonView != null && targetPhotonView.gameObject.tag == "base")
+        {
+            CreateExplosionEffect();
+            Destroy(gameObject);
+            return;
+        }
+        
         if (targetUpdate <= 0 && targetPhotonView != null)
         {
             Vector3 actualTarget = targetPhotonView.transform.position;
@@ -107,5 +158,11 @@ public class Bomb : MonoBehaviour
             Debug.Log("Destroyed bullet because reached its target");
             Destroy(gameObject);
         }
+    }
+    void CreateExplosionEffect()
+    {
+        GameObject particleEffect = Instantiate(hitEffect, transform.position, transform.rotation);
+        particleEffect.transform.Translate(0, 0, .3f);
+        particleEffect.transform.Rotate(Vector3.up, 180f);
     }
 }
